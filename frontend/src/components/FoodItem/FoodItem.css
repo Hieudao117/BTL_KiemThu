@@ -1,0 +1,205 @@
+.food-item{
+    width: 100%;
+   
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px black;
+    transition: 0.3s;
+    animation: fadeIn 1s;
+}
+.food-item-image{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px 15px 0px 0px;
+}
+.food-item-infor{
+    padding: 20px;
+
+}
+.food-item-name-rating{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+.food-item-name-rating p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.food-item-name-rating img{
+    width: 70px;
+}
+.food-item-desc{
+    color: gray;
+    font-size: 12px ;
+}
+.food-item-price{
+    color: tomato;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 10px 0px;
+}
+.food-item-container{
+    position: relative;
+
+    
+}
+.food-item:hover {
+    
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+}
+
+.add{
+    width: 35px;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    cursor: pointer;
+    border-radius: 50%;
+    
+}
+.food-item-counter{
+    position: absolute;
+    bottom: 15px;right: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 50px;
+    background-color: wheat;
+   
+}
+.food-item-counter img{
+    width: 30px;
+    
+}
+@media (max-width: 768px) {
+    .food-item {
+        width: 90%;
+        margin: 10px auto;
+    }
+    .food-item-image {
+        height: 150px;
+    }
+    .food-item-name-rating p {
+        font-size: 18px;
+    }
+    .food-item-desc {
+        font-size: 10px;
+    }
+    .food-item-price {
+        font-size: 18px;
+    }
+}
+.add, .food-item-counter img {
+    outline: none;
+}
+.add:focus, .food-item-counter img:focus {
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.add:hover, .food-item-counter img:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s ease-in-out;
+}
+.food-item-counter {
+    background-color: #fdf5e6; 
+    padding: 5px 10px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.food-item-desc {
+    color: #6c757d; 
+}
+.product-modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease-in-out;
+    z-index: 1000;
+}
+
+.product-modal-content {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    width: 90%;
+    max-width: 500px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    position: relative;
+    animation: slideIn 0.3s ease-in-out;
+}
+
+.product-modal-image {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    margin-bottom: 20px;
+}
+
+.close-button {
+    position: absolute;
+    top: 10px;
+    border-radius: 50%;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+.modal-price {
+    color: tomato;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+.modal-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.modal-counter img {
+    width: 40px;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.modal-counter img:hover {
+    transform: scale(1.1);
+}
+
+.modal-counter p {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+}
+
+
+
+

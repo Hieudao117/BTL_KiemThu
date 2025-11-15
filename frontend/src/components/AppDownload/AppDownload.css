@@ -1,0 +1,50 @@
+.app-download{
+    margin: auto auto;
+    margin-top: 100px;
+    text-align: center;
+    font-size: max(2vw,20px) ;
+    font-weight: 500;
+
+}
+.app-download-platform{
+    display: flex;
+    justify-self: center;
+    gap: max(2vw,10px);
+    margin-top: 40px;
+}
+.app-download-platform a img{
+    width: max(30vw,120px);
+    max-width: 180px;
+    cursor: pointer
+    ;
+    transition: 0.5s;
+}
+.app-download-platform img:hover{
+    transform: scale(1.05);
+}
+.news-link {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  .news-link a {
+    animation: twinkle1 infinite ease-in-out 0.5s;
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+    transition: color 0.3s;
+  }
+  
+  .news-link a:hover {
+    color: #0056b3;
+  }
+  @keyframes twinkle1 {
+    0%, 100% {
+      
+      opacity: 0.5;
+    }
+    50% {
+      
+      opacity: 1;
+    }
+  }
